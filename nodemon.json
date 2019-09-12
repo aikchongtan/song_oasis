@@ -1,0 +1,21 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "src/client",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": [
+    "src/server"
+  ],
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "ext": "js json",
+  "postcss-flexbugs-fixes": "3.2.0",
+  "postcss-loader": "2.0.8"
+}
