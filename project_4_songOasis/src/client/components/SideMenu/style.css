@@ -1,0 +1,72 @@
+/*SideMenu css*/
+
+.side_menu_container {
+  padding: 20px;
+  color: rgb(179, 179, 179);
+  margin: 0;
+}
+
+.user_library_header {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: 'Proxima Thin', Georgia, sans-serif;
+  font-size: 13px;
+  margin: 0;
+  padding: 0 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.side_menu_item {
+  list-style-type: none;
+  line-height: 28px;
+  font-size: 17px;
+  width: 140px;
+  cursor: pointer;
+text-overflow: ellipsis;
+white-space: nowrap;
+padding-top:14px
+}
+
+.side_menu_item_active {
+  list-style-type: none;
+  line-height: 28px;
+  font-size: 18px;
+  width: 140px;
+  cursor: pointer;
+text-overflow: ellipsis;
+white-space: nowrap;
+margin-left: -3px;
+padding-top:10px
+}
+
+
+.side_menu_item:hover {
+  color: #fff;
+  font-size: 19px;
+}
+
+.radio {
+  margin-bottom: 20px;
+}
+
+.side_menu_container .active {
+	margin-left: -3px;
+}
+
+.side_menu_container_active {
+	margin-left: -3px;
+}
+
+.side_menu_container .active:before {
+	content: "";
+	border-left: 3px solid #1db954;
+	position: relative;
+	left: -18px;
+}
+
+.side_menu_item_active:before {
+	content: "";
+	border-left: 3px solid #1db954;
+	position: relative;
+	left: -18px;
+}
