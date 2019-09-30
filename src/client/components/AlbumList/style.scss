@@ -1,0 +1,63 @@
+.album_view_container {
+  width: 900px; 
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.album_item {
+  padding: 15px;
+  list-style-type: none;
+  line-height: 28px;
+  font-size: 12 px;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  width: 190px;
+  cursor: pointer;
+}
+
+.album_image {
+    position: relative;
+}
+
+.album_image img {
+  width: 100%;
+}
+
+.album_item img:hover {
+  opacity: 0.3;
+}
+
+.album_image .play-song {
+  width: 40px;
+  opacity: 0;
+  text-align: center;
+}
+
+.album_image .play-song .fa {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ccc;
+  cursor: pointer;
+  -webkit-text-stroke: 6px rgb(24, 24, 24);
+  z-index: -1;
+}
+
+.album_image:hover > .play-song {
+  opacity: 1;
+}
+
+.album_details {
+  line-height: 22px
+}
+
+.artist_name {
+  color: rgb(179, 179, 179);
+  font-family: 'Proxima Thin', Georgia, sans-serif;
+}

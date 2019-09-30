@@ -9,7 +9,7 @@ module.exports = {
   entry: ['./src/client/index.jsx'],
   output: {
     publicPath: '/',
-    path: resolve(__dirname, '..', 'build', 'client'),
+    path: resolve(__dirname, '..', 'build', 'client','public'),
     filename: '[name].js'
   },
   module: {
@@ -34,6 +34,10 @@ module.exports = {
       {
         test: /\.html$/,
         loader: 'html-loader'
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       },
       {
         test: /\.s?css$/,

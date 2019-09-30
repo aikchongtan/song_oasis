@@ -1,0 +1,100 @@
+.browse_headers {
+  display: flex;
+}
+
+.browse_headers p {
+  color: rgb(179, 179, 179);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Proxima Thin', Georgia, sans-serif;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.browse_headers p:first-child {
+  margin: 0 20px 0 0;
+}
+
+.browse_headers p:hover {
+  color: #fff;
+}
+
+.playlist_image {
+  width: 230px;
+}
+
+.playlist_title_container {
+  display: flex;
+}
+
+.playlist_info_container {
+  padding-left: 20px;
+  position: relative;
+  top: 75px;
+}
+
+.created_by {
+  font-family: 'Proxima Thin', Georgia, sans-serif;
+  font-size: 13px;
+  color: #aaa;
+  padding: 8px 0;
+}
+
+.lighter_text {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+  color: #fff;
+}
+
+.playlist_text {
+  font-family: 'Proxima Thin', Georgia, sans-serif;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.header_title {
+  font-size: 26px;
+  padding: 3px 0 5px 0;
+}
+
+.browse_headers .active {
+  position: relative;
+}
+
+.browse_headers .active:after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  left: 50%;
+  top: 22px;
+  border-bottom: 2px solid #1db954;
+  transform: translate(-50%, -50%);
+}
+
+.current_artist_header_container {
+	display: flex;
+}
+
+.current_artist_image {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+}
+
+.current_artist_info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 20px;
+}
+
+.current_artist_info p {
+	text-transform: uppercase;
+	font-family: 'Proxima Thin', Georgia, sans-serif;
+	font-size: 8px;
+}
+
+.artist_button {
+	margin-top: 20px;
+	margin-left: 40px;
+}

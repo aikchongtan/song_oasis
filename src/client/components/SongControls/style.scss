@@ -1,0 +1,110 @@
+.song_details {
+  position: absolute;
+  left: 20px;
+  line-height: 22px;
+}
+
+.song_details .song_name {
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 100px;
+}
+
+.song_details .artist_name {
+  font-family: 'Proxima Thin', Georgia, sans-serif;
+  color: #aaa;
+  font-size: 12px;
+  padding-left: 100px;
+}
+
+.song_controls {
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.forward,
+.reverse,
+.play_btn {
+  padding: 0 5px;
+  color: rgb(179, 179, 179);
+  cursor: pointer;
+}
+
+.reverse,
+.forward {
+  font-size: 16px;
+}
+
+.song_player_container .play_btn {
+  position: relative;
+  top: -7px;
+  font-size: 40px;
+}
+
+.song_player_container .pause_btn {
+  position: relative;
+  top: -7px;
+  font-size: 40px;
+  margin: 0 5px;
+}
+
+.play_btn .fa {
+  -webkit-text-stroke: 4px rgb(40, 40, 40);
+}
+
+.song_progress_container {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+.song_progress {
+  width: 500px;
+  height: 4px;
+  background: rgb(64, 64, 64);;
+  border-radius: 4px;
+}
+
+.song_expired {
+  margin: 0;
+  width: 100px;
+  height: 4px;
+  background: #1db954;
+  border-radius: 4px;
+}
+
+.reverse_song{
+  padding-top:10px;
+}
+.next_song{
+  padding-top:10px;
+}
+
+
+.timer_start {
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+  left: -10px;
+}
+
+.timer_end {
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+
+.album_artwork_container {
+  width: 110px;
+  position: fixed;
+  padding-left: 25px;
+  margin-top: -4px;
+  //bottom: 75px;
+}
+
+.album_artwork {
+  width: 100%;
+}
