@@ -1,0 +1,12 @@
+
+ghostshiphost@GhostShip:/mnt/e/General_Assembly/projects/movie_Oasis$ git remote -v
+heroku  https://git.heroku.com/movieoasis.git (fetch)
+heroku  https://git.heroku.com/movieoasis.git (push)
+origin  https://github.com/aikchongtan/movie_oasis.git (fetch)
+origin  https://github.com/aikchongtan/movie_oasis.git (push)
+
+Add, and Commit all your data to git (you may want to push to Github too).
+
+Then push it to Heroku (it's just another git remote afterall), enter the following command
+
+>>git push heroku master
