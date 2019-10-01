@@ -381,7 +381,7 @@ class App extends React.Component {
 
 	/******************   Action:app  ******************** */
 	componentDidMount() {
-		let hashParams = {}
+		/*let hashParams = {}
 		let e, r = /([^&;=]+)=?([^&;]*)/g,
 			q = window.location.hash.substring(1);
 		while (e = r.exec(q)) {
@@ -389,12 +389,15 @@ class App extends React.Component {
 		}
 		console.log("hashParams.access_token::::: " + hashParams.access_token)
 		if (!hashParams.access_token) {
-			// window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=http://localhost:3000/callback';
-			window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=https://songoasis.herokuapp.com/callback';
+			window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=http://localhost:3000/callback';
+			//window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=https://songoasis.herokuapp.com/callback';
 		} else {
 			this.setToken(hashParams.access_token);
 			this.props.viewType == undefined ? this.handleBrowseClick(hashParams.access_token) : '';
-		}
+		}*/
+		let userToken = "BQC4yISo1mjc28QVH0ABj8YLa5_B-RbKt9SrF6BSkfOH6CyUXwOFm3YTAoKbcOOD2VSqkAoU_k0-_an167Oi-mFtZRjO82qWMNhyfxYxPbro2wMGh8h09_71_I0zBo04HDLgls4yERmI_8EM65A2xjTB1sYaciWtaM0DQpX_4JzP5qW85MbAEqjkkLBRs5Vnfi3DFYCjFbJsXNQY5U_geDTuxNrYxJrNPFPoA4KJuhNcljxEKNTj43-rzXkPUxb__RE6otKN7_-rmZI9Wk5hlNqN8z3nu15A_w";
+		this.setToken(userToken);
+		this.props.viewType == undefined ? this.handleBrowseClick(userToken) : '';
 	}
 
 	componentWillReceiveProps() {
