@@ -7,7 +7,9 @@ import styles from './styles/style.scss';
 import Lyrics from './components/Lyrics/Lyrics';
 import SideMenu from './components/SideMenu/SideMenu';
 import Header from './components/Header/Header';
-import MainHeader from './componenfetchAlbums/MainView/MainView';
+//import MainHeader from './componenfetchAlbums/MainView/MainView';
+import MainHeader from './components/MainHeader/MainHeader';
+import MainView from './components/MainView/MainView';
 import Footer from './components/Footer/Footer';
 
 import '../public/canvas.js';
@@ -388,8 +390,8 @@ class App extends React.Component {
 		}
 		console.log("hashParams.access_token::::: " + hashParams.access_token)
 		if (!hashParams.access_token) {
-			//window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=http://localhost:3000/callback';
-			window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=https://songoasis.herokuapp.com/callback';
+			window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=http://localhost:3000/callback';
+			// window.location.href = 'https://accounts.spotify.com/authorize?client_id=230be2f46909426b8b80cac36446b52a&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-public%20user-read-recently-played%20playlist-modify-private%20ugc-image-upload%20user-follow-modify%20user-follow-read%20user-library-read%20user-library-modify%20user-read-private%20user-read-email%20user-top-read%20user-read-playback-state&response_type=token&redirect_uri=https://songoasis.herokuapp.com/callback';
 		} else {
 			this.setToken(hashParams.access_token);
 			this.props.viewType == undefined ? this.handleBrowseClick(hashParams.access_token) : '';
