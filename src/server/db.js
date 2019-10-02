@@ -17,8 +17,8 @@ if (process.env.DATABASE_URL) {
   };
 } else {
   configs = {
-    user: 'ghostshiphost',
-    password: 'Laser123',
+    user: '', //ghostshiphost
+    password: '',
     host: '127.0.0.1',
     database: 'shopping_react',
     port: 5432
