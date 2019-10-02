@@ -7,8 +7,7 @@ import styles from './styles/style.scss';
 import Lyrics from './components/Lyrics/Lyrics';
 import SideMenu from './components/SideMenu/SideMenu';
 import Header from './components/Header/Header';
-import MainHeader from './components/MainHeader/MainHeader';
-import MainView from './components/MainView/MainView';
+import MainHeader from './componenfetchAlbums/MainView/MainView';
 import Footer from './components/Footer/Footer';
 
 import '../public/canvas.js';
@@ -381,7 +380,7 @@ class App extends React.Component {
 
 	/******************   Action:app  ******************** */
 	componentDidMount() {
-		/*let hashParams = {}
+		let hashParams = {}
 		let e, r = /([^&;=]+)=?([^&;]*)/g,
 			q = window.location.hash.substring(1);
 		while (e = r.exec(q)) {
@@ -394,10 +393,12 @@ class App extends React.Component {
 		} else {
 			this.setToken(hashParams.access_token);
 			this.props.viewType == undefined ? this.handleBrowseClick(hashParams.access_token) : '';
-		}*/
+		}
+		/*
 		let userToken = "BQC4yISo1mjc28QVH0ABj8YLa5_B-RbKt9SrF6BSkfOH6CyUXwOFm3YTAoKbcOOD2VSqkAoU_k0-_an167Oi-mFtZRjO82qWMNhyfxYxPbro2wMGh8h09_71_I0zBo04HDLgls4yERmI_8EM65A2xjTB1sYaciWtaM0DQpX_4JzP5qW85MbAEqjkkLBRs5Vnfi3DFYCjFbJsXNQY5U_geDTuxNrYxJrNPFPoA4KJuhNcljxEKNTj43-rzXkPUxb__RE6otKN7_-rmZI9Wk5hlNqN8z3nu15A_w";
 		this.setToken(userToken);
 		this.props.viewType == undefined ? this.handleBrowseClick(userToken) : '';
+		*/
 	}
 
 	componentWillReceiveProps() {
